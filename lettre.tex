@@ -1,0 +1,37 @@
+\documentclass[11pt]{lettre}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\input{commands.tex}
+
+\begin{document} 
+    \begin{letter}{nom, prénom\\
+                    ...\\ 
+                    adresse \\
+                    code postal + ville
+                    }
+                    
+        %\date{le 28 août 2023} %changer si différent d'aujourd'hui
+        
+        \nolieu %lieu d'envoie
+        \address{adresse \\
+                code postal + ville}
+        \telephone{01 01 01 01 01}
+        \nofax
+        \email{adressemail@adresse.mail}
+
+        %\NoRule % Décommenter pour supprimer le trait de pliage
+
+        \signature{prénom + nom}  %aussi utilisable avec /name{}
+        
+        \opening{Madame, Monsieur,}
+        
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida augue urna, vitae egestas sapien ...
+
+            Donec cursus et augue ac lacinia. Sed volutpat sodales orci, ac mattis velit. Suspendisse finibus nunc ...
+
+          
+        \closing{Forme de politesse}
+        
+    \end{letter}
+\end{document}
